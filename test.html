@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="upload-instruct">
+            Add a row
+        </div>
+        <div class="field">
+            <input type="text" name="name" value="" />
+            <button id="process" class="button" data-testid="button">Process</button>
+        </div>
+
+        <div class="field">
+            <h3>Items</h3>
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tbody id="table-body" data-testid="table"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+
+</body>
+
+</html>

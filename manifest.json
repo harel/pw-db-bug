@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Indexed DB Bug Test",
+    "description": "Test issues with playwright and indexed db in an extension context",
+    "version": "1.0",
+    "options_ui": {
+        "page": "test.html",
+        "open_in_tab": true
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "service-worker.js",
+        "scripts": [
+            "service-worker.js"
+        ],
+        "type": "module"
+    }
+}
