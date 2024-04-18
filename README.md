@@ -12,10 +12,10 @@ This puts me in a stuck position of being unable to write tests for this kind of
 I am running playwright with:
 `PW_EXPERIMENTAL_SERVICE_WORKER_NETWORK_EVENTS=1 npx playwright test --ui`
 
-I'm also importing `test` and `expect` from a fixture where I'm using `launchPersistentContext` and loading the extension, as per the reccomendations regarding browser extensions. This behaviour is exhibited with headless true or false.
+I'm also importing `test` and `expect` from a fixture where I'm using `launchPersistentContext` and loading the extension, as per the recommendations regarding browser extensions. This behaviour is exhibited with headless true or false.
 
 
-Because of the nature of this problem providing a simple code example won't do. So I've reated a tiny repo which demonstrates the issue here:  https://github.com/harel/pw-db-bug
+Because of the nature of this problem providing a simple code example won't do. So I've created a tiny repo which demonstrates the issue here:  https://github.com/harel/pw-db-bug
 
 
 once cloned you can execute the tests to demontrate the problem using: 
